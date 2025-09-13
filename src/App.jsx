@@ -24,14 +24,11 @@ function App() {
       onStopVto: hideModule,
       mode: "pd",
       frameId: "8053672909258",
-
-      onRenderResult: (data) => {
+      onResult: (data) => {
         console.log("Measurement complete:", data);
         setMeasurementData(data);
         setMeasurementComplete(true);
-        setIsLoading(false);
-        
-        // Calculate additional measurements from the response data
+        setIsLoading(false);        
         calculateAdditionalMeasurements(data);
       }
     };
