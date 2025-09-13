@@ -5,28 +5,9 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React</title>
-    <style>
-      /* Fixed size container */
-      #my-fitmix-container {
-        width: 660px;
-        height: 560px;
-        display: none; /* hidden initially */
-        border: 1px solid #ccc;
-        margin-top: 20px;
-      }
-
-      #startVtoBtn {
-        margin-top: 20px;
-        padding: 10px 20px;
-        font-size: 16px;
-      }
-    </style>
   </head>
   <body>
-    <!-- <div id="root"></div> -->
-    <button id="startVtoBtn" disabled>Start PD Measurement</button>
-    <div id="my-fitmix-container"></div>
-
+    <div id="root"></div>
     <!-- Load VTO script over HTTPS -->
     <script
       src="https://vto-advanced-integration-api.fittingbox.com/index.js"
