@@ -24,7 +24,8 @@ function App() {
       onStopVto: hideModule,
       mode: "pd",
       frameId: "8053672909258",
-      onComplete: (data) => {
+      // Using onRenderResult instead of onComplete
+      onRenderResult: (data) => {
         console.log("Measurement complete:", data);
         setMeasurementData(data);
         setMeasurementComplete(true);
