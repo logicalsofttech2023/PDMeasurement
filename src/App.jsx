@@ -25,6 +25,8 @@ function App() {
       mode: "pd",
       frameId: "8053672909258",
       onRenderResult: (data) => {
+        console.log("Measurement data:");
+        
         console.log("Measurement complete:", data);
         setMeasurementData(data);
         setMeasurementComplete(true);
